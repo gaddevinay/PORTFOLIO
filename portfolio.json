@@ -1,0 +1,34 @@
+[
+  {
+    "category": "projects",
+    "name": "E-Commerce Website",
+    "client": "XYZ Corp",
+    "language": "HTML, CSS, JavaScript",
+    "preview": "https://example.com",
+    "image": "images/hcrafts-proj.png"
+  },
+  {
+    "category": "projects",
+    "name": "Portfolio Website",
+    "client": "Freelance",
+    "language": "React, Node.js",
+    "preview": "https://portfolio.com",
+    "image": "images/netflix-proj.PNG"
+  },
+  {
+    "category": "certificates",
+    "name": "Web Development Certification",
+    "client": "Udemy",
+    "language": "HTML, CSS, JS",
+    "preview": "https://udemy.com",
+    "image": "CERTIFICATES/hackerrankcss.jpg"
+  },
+  {
+    "category": "certificates",
+    "name": "Full Stack Certification",
+    "client": "Coursera",
+    "language": "MERN Stack",
+    "preview": "https://coursera.com",
+    "image": "CERTIFICATES/infosysspringboardhtml5.jpg"
+  }
+]
