@@ -142,7 +142,6 @@ window.addEventListener("load", function () {
 
         const newHeight = Math.max(10, contentHeight - 75);
 
-
         icon.style.setProperty("--after-height", `${newHeight}px`);
       }
     }
@@ -186,21 +185,24 @@ document
     event.preventDefault();
 
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value; 
+    const email = document.getElementById("email").value;
     const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value; 
+    const message = document.getElementById("message").value;
     const responseMessage = document.createElement("p"); // Create a response message dynamically
-    document.getElementById("contact-form-unique").appendChild(responseMessage); 
+    document.getElementById("contact-form-unique").appendChild(responseMessage);
 
     responseMessage.textContent = "Sending...";
     responseMessage.style.color = "blue";
 
     try {
-      const response = await fetch("https://gaddevinay-portfolio.vercel.app/api/send-email2.js", { 
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, subject, message }), // Include subject
-      });
+      const response = await fetch(
+        "https://gaddevinay-portfolio.vercel.app/api/send-email2.js",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, subject, message }), // Include subject
+        }
+      );
 
       const data = await response.json();
       responseMessage.textContent = data.message;
