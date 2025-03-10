@@ -1,39 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".icon-btn");
-    const sections = document.querySelectorAll("section");
-    const aboutButton = document.getElementById("abt-btn"); // "More About Me" button
-    const aboutSection = document.getElementById("about");
+  const buttons = document.querySelectorAll(".icon-btn");
+  const sections = document.querySelectorAll("section");
+  const aboutButton = document.getElementById("abt-btn"); // "More About Me" button
+  const aboutSection = document.getElementById("about");
 
-    function showSection(index) {
-        sections.forEach((section, i) => {
-            section.style.display = i === index ? "block" : "none";
-        });
-
-        // Set active class on sidebar buttons
-        buttons.forEach((btn, i) => {
-            btn.classList.toggle("active", i === index);
-        });
-    }
-
-    // Sidebar Navigation
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            showSection(index);
-        });
+  function showSection(index) {
+    sections.forEach((section, i) => {
+      section.style.display = i === index ? "block" : "none";
     });
 
-    // Handle "More About Me" button click
-    if (aboutButton && aboutSection) {
-        aboutButton.addEventListener("click", () => {
-            const aboutIndex = [...sections].indexOf(aboutSection); // Find index of About section
+    // Set active class on sidebar buttons
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle("active", i === index);
+    });
+  }
 
-            if (aboutIndex !== -1) {
-                showSection(aboutIndex);
-            }
-        });
-    }
+  // Sidebar Navigation
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      showSection(index);
+    });
+  });
 
-    showSection(0); // Show Home section by default
+  // Handle "More About Me" button click
+  if (aboutButton && aboutSection) {
+    aboutButton.addEventListener("click", () => {
+      const aboutIndex = [...sections].indexOf(aboutSection); // Find index of About section
+
+      if (aboutIndex !== -1) {
+        showSection(aboutIndex);
+      }
+    });
+  }
+
+  showSection(0); // Show Home section by default
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -158,23 +158,28 @@ window.addEventListener("load", function () {
   updateTimelineHeights(); // Start checking on load
 });
 $(document).ready(function () {
-    function checkForm() {
-        let isValid = true;
-        
-        // Check if any input field or textarea is empty
-        $("#contact-form-unique input, #contact-form-unique textarea").each(function () {
-            if ($(this).val().trim() === "") {
-                isValid = false;
-            }
-        });
+  function checkForm() {
+    let isValid = true;
 
-        // Enable or disable button based on validity
-        $("#submit-msg").prop("disabled", !isValid);
-    }
+    // Check if any input field or textarea is empty
+    $("#contact-form-unique input, #contact-form-unique textarea").each(
+      function () {
+        if ($(this).val().trim() === "") {
+          isValid = false;
+        }
+      }
+    );
 
-    // Run check on input changes
-    $("#contact-form-unique input, #contact-form-unique textarea").on("input", checkForm);
+    // Enable or disable button based on validity
+    $("#submit-msg").prop("disabled", !isValid);
+  }
 
-    // Initially disable the button
-    $("#submit-msg").prop("disabled", true);
+  // Run check on input changes
+  $("#contact-form-unique input, #contact-form-unique textarea").on(
+    "input",
+    checkForm
+  );
+
+  // Initially disable the button
+  $("#submit-msg").prop("disabled", true);
 });

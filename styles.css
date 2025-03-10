@@ -506,7 +506,7 @@ circle {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
 }
 
 .portfolio-item {
@@ -721,10 +721,12 @@ circle {
     height: 120px;
     resize: none;
 }
+
 #submit-msg:disabled {
-    cursor: not-allowed; 
-    
+    cursor: not-allowed;
+
 }
-#submit-msg:disabled:hover{
-    opacity: 0.5; 
-} 
+
+#submit-msg:disabled:hover {
+    opacity: 0.5;
+}

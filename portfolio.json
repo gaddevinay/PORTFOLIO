@@ -1,34 +1,90 @@
 [
   {
     "category": "projects",
-    "name": "E-Commerce Website",
-    "client": "XYZ Corp",
+    "name": "HandiCrafts Website",
+    "client": "Personal Project",
     "language": "HTML, CSS, JavaScript",
-    "preview": "https://example.com",
-    "image": "images/hcrafts-proj.png"
+    "preview": "https://gaddevinay.github.io/hcrafts/",
+    "image": "images/project1.png"
+  },
+  {
+    "category": "projects",
+    "name": "Srija Agri Genetics",
+    "client": "Srija Agri Genetics",
+    "language": "HTML, CSS, JavaScript, Node.js",
+    "preview": "https://srijaagrigenetics.netlify.app/",
+    "image": "images/project2.png"
+  },
+  {
+    "category": "certificates",
+    "name": "Cyber Security Internship",
+    "client": "SkillDzire",
+    "language": "Cyber Security",
+    "preview": "CERTIFICATES/Gadde_Vinay_certificate.pdf",
+    "image": "CERTIFICATES/skilldzirecertficate.png"
   },
   {
     "category": "projects",
     "name": "Portfolio Website",
-    "client": "Freelance",
-    "language": "React, Node.js",
-    "preview": "https://portfolio.com",
-    "image": "images/netflix-proj.PNG"
+    "client": "Personal Project",
+    "language": "HTML, CSS, JavaScript, Node.js",
+    "preview": "https://gaddevinay-portfolio.vercel.app/",
+    "image": "images/project4.png"
   },
   {
     "category": "certificates",
-    "name": "Web Development Certification",
-    "client": "Udemy",
-    "language": "HTML, CSS, JS",
-    "preview": "https://udemy.com",
+    "name": "Python Programming Certification",
+    "client": "Guvi",
+    "language": "Python",
+    "preview": "https://www.guvi.in/share-certificate/9618cr1737y6LVN971",
+    "image": "CERTIFICATES/guvipython.jpg"
+  },
+  {
+    "category": "certificates",
+    "name": "JavaScript Certification",
+    "client": "Sololearn",
+    "language": "JavaScript",
+    "preview": "https://www.sololearn.com/en/certificates/CC-SCZK0C7E",
+    "image": "CERTIFICATES/sololearnjavascript.jpg"
+  },
+  {
+    "category": "certificates",
+    "name": "CSS Certification",
+    "client": "HackerRank",
+    "language": "CSS",
+    "preview": "https://www.hackerrank.com/certificates/2f6e05583602",
     "image": "CERTIFICATES/hackerrankcss.jpg"
   },
   {
     "category": "certificates",
-    "name": "Full Stack Certification",
-    "client": "Coursera",
-    "language": "MERN Stack",
-    "preview": "https://coursera.com",
+    "name": "Flipkart Grid Challenge",
+    "client": "Unstop",
+    "language": "Competitive Programming",
+    "preview": "https://unstop.com/certificate-preview/3806a793-8b16-42f8-8f85-eeb09c606d0f",
+    "image": "CERTIFICATES/unstopflipkart.jpg"
+  },
+  {
+    "category": "certificates",
+    "name": "Responsive Web Design",
+    "client": "freeCodeCamp",
+    "language": "HTML, CSS, JavaScript",
+    "preview": "https://www.freecodecamp.org/certification/vinaygadde/responsive-web-design",
+    "image": "CERTIFICATES/freecodecampresponsivewebdesign.jpg"
+  },
+  {
+    "category": "certificates",
+    "name": "HTML5 Certification",
+    "client": "Infosys Springboard",
+    "language": "HTML5",
+    "preview": "CERTIFICATES/1-2143478e-b92c-4094-831e-7e3c61aac0c5.pdf",
     "image": "CERTIFICATES/infosysspringboardhtml5.jpg"
+  },
+  {
+    "category": "projects",
+    "name": "Netflix-Clone Website",
+    "client": "Personal Project",
+    "language": "HTML, CSS, JavaScript",
+    "preview": "https://github.com/gaddevinay/NETFLIX-CLONE",
+    "image": "images/project3.png"
   }
 ]
