@@ -142,9 +142,6 @@ window.addEventListener("load", function () {
 
         const newHeight = Math.max(10, contentHeight - 75);
 
-        console.log(
-          `Content ${i} Height: ${contentHeight}, After Height: ${newHeight}`
-        );
 
         icon.style.setProperty("--after-height", `${newHeight}px`);
       }
@@ -183,3 +180,40 @@ $(document).ready(function () {
   // Initially disable the button
   $("#submit-msg").prop("disabled", true);
 });
+document
+  .getElementById("contact-form-unique")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value; 
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value; 
+    const responseMessage = document.createElement("p"); // Create a response message dynamically
+    document.getElementById("contact-form-unique").appendChild(responseMessage); 
+
+    responseMessage.textContent = "Sending...";
+    responseMessage.style.color = "blue";
+
+    try {
+      const response = await fetch("https://gaddevinay-portfolio.vercel.app/api/send-email2.js", { 
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }), // Include subject
+      });
+
+      const data = await response.json();
+      responseMessage.textContent = data.message;
+      responseMessage.style.color = response.ok ? "green" : "red";
+
+      if (response.ok) {
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      responseMessage.textContent = "Error sending email.";
+      responseMessage.style.color = "red";
+    }
+  });
