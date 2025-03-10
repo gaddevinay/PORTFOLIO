@@ -211,7 +211,7 @@ document
       if (response.ok) {
         setTimeout(() => {
           window.location.reload();
-        }, 2000);
+        }, 100);
       }
     } catch (error) {
       console.error("Error:", error);
